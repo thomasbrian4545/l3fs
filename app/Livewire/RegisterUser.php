@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class RegisterUser extends Component
 {
-    #[Rule("required")]
+    #[Rule("required", message:"Nama wajib diisi.")]
     public $name;
     #[Rule("required|unique:users|email")]
     public $email;
