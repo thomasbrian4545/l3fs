@@ -1,13 +1,16 @@
 <?php
 
 namespace App\Livewire;
-
+use Livewire\Attributes\Layout;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class Counter extends Component
 {
     public $count = 0;
     public $limit = 5;
+    #[Layout('components.layouts.app')]
+    #[Title('My Counter page')]
 
     public function render()
     {
