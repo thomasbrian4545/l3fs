@@ -4,15 +4,11 @@ namespace App\Livewire;
 
 use Livewire\Attributes\Rule;
 use Livewire\Component;
+use App\Livewire\Forms\RegisterForm;
 
 class RegisterUser extends Component
 {
-    #[Rule("required", message:"Nama wajib diisi.")]
-    public $name;
-    #[Rule("required|unique:users|email")]
-    public $email;
-    #[Rule("required|min:5")]
-    public $password;
+    public RegisterForm $form;
 
     public function render()
     {
@@ -21,7 +17,7 @@ class RegisterUser extends Component
 
     public function save()
     {
-        $this->validate();
+        $this->form->validate();
         dd(123);
     }
 }
