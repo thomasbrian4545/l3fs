@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AllUsers;
 use App\Livewire\Counter;
 use App\Livewire\DropDown;
 use App\Livewire\FileUploadDownload;
@@ -25,3 +26,4 @@ Route::get('/counter', Counter::class);
 Route::get('/register', RegisterUser::class);
 Route::get('/dropdown', DropDown::class);
 Route::get('/file-upload-download', FileUploadDownload::class);
+Route::get('/all-users', AllUsers::class);

@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Attributes\Lazy;
 use Livewire\Component;
 
-#[Lazy]
+// #[Lazy]
 class NavBar extends Component
 {
     public function placeholder()
