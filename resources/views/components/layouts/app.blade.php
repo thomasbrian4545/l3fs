@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <livewire:nav-bar/>
+    {{-- <livewire:nav-bar lazy="true" /> --}}
+    <livewire:nav-bar />
     <div class="container">
         {{ $slot }}
     </div>
